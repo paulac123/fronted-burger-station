@@ -1,0 +1,68 @@
+.empty-cart {
+  text-align: center;
+  margin: 250px 0;
+  font-size: 35px;
+  color: #ffffff;
+}
+.buy-button {
+  margin-top: 20px;
+  background-color: #ff9100e3;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  padding: 0 20px;
+  transition: background-color 0.3s;
+  width: 200px;
+}
+.clear-cart-button {
+  margin-top: 20px;
+  background-color: #ff9100e3;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  padding: 0 20px;
+  transition: background-color 0.3s;
+  width: 200px;
+}
+.remove-button {
+  background-color: rgb(226, 223, 223);
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 100%;
+  font-size: 20px;
+  padding: 0;
+  transition: transform 0.5s; /* animación suave */
+  width: 20px;
+}
+.cart-image {
+  width: 50px;
+}
+.cart-list {
+  background-color: #44150287;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  width: 100%; /* ocupa el ancho disponible */
+  max-width: 280px; /* límite para no crecer demasiado */
+  margin: auto; /* centra dentro del grid */
+  overflow: hidden; /* evita que algo se salga */
+  height: 100%;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  width: 400px;
+}
+
+.search-input {
+  background-color: rgb(255, 255, 255);
+  width: 500px; /* ancho */
+  height: 35px; /* alto */
+  font-size: 1rem; /* tamaño del texto */
+  padding: 0 10px; /* espacio interno */
+  border-radius: 8px; /* bordes redondeados */
+  border: 1px solid #ccc; /* borde gris */
+  margin-left: 70px;
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    width: 60%;
+  }
+}

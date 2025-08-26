@@ -1,0 +1,77 @@
+/* Contenedor general del login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+
+  background: #000000;
+
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+.login {
+  margin-top: 150px;
+}
+
+/* Formulario */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px; /* para que no sea muy ancho en pantallas grandes */
+}
+
+.login-container input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 40px;
+  border: none;
+}
+
+/* Botón principal */
+.login-container button {
+  margin-top: 20px;
+  background-color: #ff9100e3;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  padding: 0 20px;
+  transition: background-color 0.3s;
+  width: 200px;
+}
+
+.login-container button:hover {
+  background-color: #e63e00;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #ff6a00;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .login-container form {
+    padding-top: 50px;
+  }
+  .login-container h1 {
+    margin-top: 230px;
+    font-size: 1.5rem;
+  }
+  .login-container {
+    background: #000000;
+    background-blend-mode: normal;
+  }
+}

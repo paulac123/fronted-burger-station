@@ -1,42 +1,48 @@
 #root {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+  padding-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* estilos globales para móvil */
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar a {
+    display: flex;
+    margin: 5px 0;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  /* Lista de productos */
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr; /* una sola columna en celular */
+    gap: 10px;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  /* Tarjeta de producto */
+  .product-card {
+    width: 100%; /* que se ajuste al ancho */
+    margin: 0 auto;
+  }
 
-.read-the-docs {
-  color: #888;
+  /* Botones */
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* Inputs */
+  input {
+    width: 100%; /* ocupan todo el ancho */
+    margin: 5px 0;
+  }
 }
