@@ -1,0 +1,31 @@
+:root {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: radial-gradient(circle at 50% 20%, #ff4500, transparent 20%),
+    radial-gradient(circle at 90% 40%, #ff8c00, transparent 30%),
+    /* fondo negro carbón */
+      radial-gradient(circle at 40% 80%, #ff6f00, transparent 30%),
+    #1c1c1c;
+  background-blend-mode: screen;
+  background-size: cover;
+  color: #fff; /* texto claro para contraste */
+  font-family: "Arial", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #ffffff;
+    background-color: #000000;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
