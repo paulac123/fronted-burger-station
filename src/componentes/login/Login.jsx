@@ -16,7 +16,7 @@ const Login = () => {
   const { handleLoginSuccess } = useContext(CartContext);
 
   const handleLogin = async (e) => {
-    e.preventDefault(); //con esto no se recarga
+    e.preventDefault(); //con esto no se recarg
     try {
       const response = await axios.post(
         "https://backend-burger-station.onrender.com/api/login",
