@@ -8,7 +8,6 @@ import Register from "./componentes/register/Register";
 import Login from "./componentes/login/Login";
 import Cart from "./componentes/cart/Cart";
 import OrderSuccess from "./componentes/orderSucces/OrderSucces";
-import PruebaContador from "./componentes/pruebas/prueba";
 
 const Home = () => {
   return <h2></h2>;
