@@ -5,7 +5,7 @@ import "./navbar.css";
 import Search from "../search/Search";
 
 const Navbar = ({ searchQuery, setSearchQuery }) => {
-  // usamos el contexto para traer el couter
+  // usamos el contexto para traer el coute
   const { counter, userEmail, handleLogout, userName } =
     useContext(CartContext);
   console.log({ userEmail, userName });
