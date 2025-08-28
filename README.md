@@ -1,12 +1,34 @@
-# React + Vite
+# 🍔 Burger Station - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el **frontend** de Burger Station, un sistema de gestión de menús y pedidos de hamburguesas y acompañamientos.  
+Fue desarrollado en **React + Vite** y se conecta a una **API REST** construida en Node.js (desplegada en **Render**) con base de datos en **PostgreSQL**.
+---
+## 🚀 Tecnologías utilizadas
+- React + Vite ⚡  
+- Axios para llamadas HTTP  
+- React Router DOM para navegación  
+---
+## 📂 Repositorio
+🔗 [Frontend Burger Station](https://github.com/paulac123/frontend-burger-station)
 
-Currently, two official plugins are available:
+### Instalación
+```bash
+git clone https://github.com/paulac123/frontend-burger-station.git
+cd frontend-burger-station
+npm install
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 Deploy
+👉 Puedes probar la aplicación directamente en:https://fronted-burger-station-r9p89oewd-paulac123s-projects.vercel.app/
 
-## Expanding the ESLint configuration
+🔗 Backend
+El backend está desplegado en Render, con base de datos en PostgreSQL.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ejemplo de endpoint disponible:  https://backend-burger-station.onrender.com/api/menu
+
+✨ Funcionalidades
+🍔 Visualización de productos del menú
+🔑 Registro y login de usuarios
+🛒 Carrito de compras con persistencia de datos
+🔍 Barra de búsqueda de productos
+🔗 Conexión en tiempo real con el backend (API REST)
