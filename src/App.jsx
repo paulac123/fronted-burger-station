@@ -1,6 +1,5 @@
 import "./App.css";
 import ProductList from "./componentes/productList/ProductList";
-import Navbar from "./componentes/navbar/Navbar";
 import { CartProvider } from "./context/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
@@ -8,6 +7,7 @@ import Register from "./componentes/register/Register";
 import Login from "./componentes/login/Login";
 import Cart from "./componentes/cart/Cart";
 import OrderSuccess from "./componentes/orderSucces/OrderSucces";
+import Navbar from "./componentes/navbar/Navbar";
 
 const Home = () => {
   return <h2></h2>;
