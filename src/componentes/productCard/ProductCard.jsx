@@ -29,7 +29,14 @@ const ProductCard = ({ product }) => {
       <h2 className="name">{product.name}</h2>
       <p className="description">{product.description}</p>
       <p className="product-price">${product.price}</p>
-      <button className="comprar" onClick={handleAddToCart}>
+      <button
+        type="button"
+        className="comprar"
+        onClick={(e) => {
+          e.stopPropagation();
+          handleAddToCart();
+        }}
+      >
         +
       </button>
     </div>

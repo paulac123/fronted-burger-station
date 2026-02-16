@@ -41,7 +41,6 @@ p {
   width: 100%; /* ocupa el ancho disponible */
   max-width: 280px; /* límite para no crecer demasiado */
   margin: auto; /* centra dentro del grid */
-  overflow: hidden; /* evita que algo se salga */
   height: 100%; /* asegura que todas las cards tengan altura uniforme */
 }
 
@@ -66,6 +65,7 @@ p {
   padding: 0;
   transition: transform 0.5s; /* animación suave */
   width: 50px;
+  touch-action: manipulation;
 }
 
 form input {
