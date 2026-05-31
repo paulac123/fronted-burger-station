@@ -4,7 +4,7 @@ const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [counter, setCounter] = useState(0);
+  const counter = cart.reduce((total, item) => total + item.quantity, 0);
   const [userEmail, setUserEmail] = useState("");
   const [userName, setUserName] = useState("");
 
@@ -60,7 +60,6 @@ const CartProvider = ({ children }) => {
       return [...prev, { ...product, quantity: 1 }];
     });
 
-    setCounter((prev) => prev + 1);
   };
 
   const removeFromCart = (id) => {
@@ -69,7 +68,6 @@ const CartProvider = ({ children }) => {
 
   const clearCart = () => {
     setCart([]);
-    setCounter(0);
   };
 
   return (
@@ -80,7 +78,6 @@ const CartProvider = ({ children }) => {
         removeFromCart,
         clearCart,
         counter,
-        setCounter,
         userEmail,
         setUserEmail,
         handleLogout,
