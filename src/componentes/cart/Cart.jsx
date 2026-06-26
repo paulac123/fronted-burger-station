@@ -67,7 +67,7 @@ const Cart = () => {
               <span className="cart-item-price">${item.price} x {item.quantity}</span>
             </div>
             <button
-              className="remove-button"
+              className="remove-button notranslate"
               onClick={() => removeFromCart(item.id)}
             >
               X
