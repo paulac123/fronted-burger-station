@@ -62,7 +62,10 @@ const Cart = () => {
               alt={item.name}
               className="cart-image"
             />
-            {item.name} - ${item.price} x {item.quantity}
+            <div className="cart-item-details">
+              <span className="cart-item-name">{item.name}</span>
+              <span className="cart-item-price">${item.price} x {item.quantity}</span>
+            </div>
             <button
               className="remove-button"
               onClick={() => removeFromCart(item.id)}

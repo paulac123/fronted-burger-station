@@ -41,7 +41,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
 
         <li>
           <Link className="cart-link" to="/cart">
-            🛒 {counter}
+            🛒 <span className="notranslate">{counter}</span>
           </Link>
         </li>
 
